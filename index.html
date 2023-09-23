@@ -9,39 +9,39 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <section class="container">
-      <div class="card card-icons">
-        <img src="images/logo.svg" aria-hidden="true" alt="logo">
-        <!-- <h2>Fylo</h2> -->
-        <div class="icons">
-          <img src="images/icon-document.svg" aria-hidden="true" alt="document">
-          <img src="images/icon-folder.svg" aria-hidden="true" alt="folder">
-          <img src="images/icon-upload.svg" aria-hidden="true" alt="upload">
+  <main class="container">
+    <div class="left-content">
+        <img class="logo" src="images/logo.svg" alt="Fylo logo" >
+        <div class="buttons">
+            <button class="button"  aria-label="document">
+              <img class="button-img" src="images/icon-document.svg" aria-hidden="true" alt="Document Button">
+            </button>
+            <button class="button"  aria-label="folder">
+              <img class="button-img" src="images/icon-folder.svg" aria-hidden="true" alt="Folder Button">
+            </button>
+            <button class="button"  aria-label="upload">
+              <img class="button-img" src="images/icon-upload.svg" aria-hidden="true" alt="Upload Button">
+            </button>
         </div>
-      </div>
-      <div class="card data-storage">
-        <p>You’ve used 815 GB of your storage</p>
-        <div class="progress-bar">
-            <div class="white-ball"></div>
-        </div>
-        <div class="data-limit">
-          <p>0 GB</p>
-          <p>1000 GB</p>
-        </div>
-        <div class="remaining-data">
-          <p>185 GB Left</p>
-          <div class="triangle"></div>
-        </div>
-      </div>
-  </section>
-  
-
-  
-  
-  
-  
-  
+    </div>
+    <div class="right-content">
+        <p class="current-data-text">You’ve used <span class="bold-text">815 GB</span> of your storage</p>
+        <div class="data-display">
+            <div class="progress-bar"></div>
+            <div class="data-limit">
+              <span>0 GB</span>
+              <span>1000 GB</span>
+            </div>
+          </div>
+          <div class="data-message">
+            <p class="data-message-text">
+              <span>185</span>
+              GB Left
+            </p>
+          </div>
+    </div>
+    <div class="background"></div>
+</main>
   
 </body>
 </html>
